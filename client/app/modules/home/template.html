@@ -1,0 +1,35 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Dummy App</h1>
+    <p class="lead">Here you can check statistics of population that live in several cities </p>
+  </div>
+</header>
+
+<body>
+  <div class="form-group">
+    <div class="filter-container">
+      <h4> City: </h4>
+      <select ng-model="search.city" ng-options="item as item for item in citiesArray" ng-change="updateYears()" class="btn btn-primary btn-block dropdown-toggle center-block required "></select>
+    </div>
+
+    <div class="filter-container">
+      <h4> Year: </h4>
+      <select ng-model="search.year" ng-options="item as item for item in yearsArray" ng-change="generateGraph()" class="btn btn-primary btn-block dropdown-toggle center-block required "></select>
+    </div>
+
+    <div class="filter-container">
+      <h4> Gender: </h4>
+      <select ng-model="search.gender" ng-options="item as item for item in genderArray" ng-change="generateGraph()" class="btn btn-primary btn-block dropdown-toggle center-block required "></select>
+    </div>
+
+    <h4>Population: </h4>
+    <bars-chart chart-data="myData"></bars-chart>
+
+    <h4>Average: </h4>
+    <h5><strong>Age:</strong> {{average.averageAge}} years old</h5>
+    <p><strong>Population:</strong> {{average.averageCount}}</p>
+
+    <h4>Location: </h4>
+    <div id="map-canvas" class="map-container"></div>
+  </div>
+</body>
