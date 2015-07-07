@@ -50,7 +50,7 @@ Desde aquí se importan las hojas de estilo de los módulos que se deseen.
 #### Api
 El endPoint creado para dar soporte al cliente es **/api/cities**
 
-* **/**: Devuelve un array de String con todas las ciudades almacenadas.
-* **/:id**: Devuelve un array de String con los años registrados referentes a una ciudad identificada por su nombre('id').
-* **/:city/:year/:gender**: Devuelve un array del objeto 'population' (que posee los atributos: age, gender, count).
-* **/all**: Devuelve la base de datos por completo.
+* '**/**': Devuelve un array de String con todas las ciudades almacenadas.
+* '**/:id**': Devuelve un array de String con los años registrados referentes a una ciudad identificada por su nombre('id').
+* '**/:city/:year/:gender**': Devuelve un array del objeto 'population' (que posee los atributos: age, gender, count).
+* '**/all**': Devuelve la base de datos por completo.
