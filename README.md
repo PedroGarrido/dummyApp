@@ -47,6 +47,8 @@ Desde aquí se importan las hojas de estilo de los módulos que se deseen.
 
 ### Server
 
+#### Config
+
 #### Api
 El endPoint creado para dar soporte al cliente es **/api/cities**
 
