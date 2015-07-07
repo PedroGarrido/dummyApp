@@ -46,8 +46,10 @@ Contiene hojas de estilos genéricas que afectan a todo el proyecto.
 Desde aquí se importan las hojas de estilo de los módulos que se deseen.
 
 ### Server
-
-#### Config
+Respecto a la arquitectura seguida para el desarrollo del sevidor, destaca:
+* '**routes.js**': Donde damos de alta a los EndPoints que usarán los clientes del servidor.
+* '**/config**': Donde mantenemos la configuración del proyecto para cada uno de los entornos donde queramos desplegar el mismo, en principio, únicamente se usa 'development'. Dentro de esta configuración se encuentra, por ejemplo, la configuración para conectar con la base de datos alojada en MongoLabs.
+* '**api/cities**': En la carpeta Api, mantendremos toda la lógica de negocio del servidor. En concreto en 'api/cities', recogemos las peticiones por parte del cliente, las procesamos, realizamos las respectivas peticiones a la base de datos, las tratramos y envíamos la respuesta al cliente.
 
 #### Api
 El endPoint creado para dar soporte al cliente es **/api/cities**
