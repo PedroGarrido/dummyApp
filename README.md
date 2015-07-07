@@ -8,11 +8,11 @@ Esta información procede de una base de datos no relacional almacenada en Mongo
 Este proyecto está generado a través de '**yo angular-fullstack**' (https://github.com/DaftMonk/generator-angular-fullstack) version 2.0.13.
 
 
-##Setup Project
+### Setup Project
 
 En primer lugar, es necesario instalarse los paquetes bower y npm. A través de '**bower install**' y '**npm install**'.
 
-## Build & development
+### Build & development
 
 Ejecutar '**grunt serve**' para lanzar la aplicación.
 
