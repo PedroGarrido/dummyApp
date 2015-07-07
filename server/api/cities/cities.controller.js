@@ -52,23 +52,6 @@ exports.getPopulation = function(req, res) {
 };
 
 /**
- * Returns an array of objects {age, count} respect to a specific search
- **/
-/*exports.getPopulation = function(req, res) {
-    console.log('getPopulation');
-    var cityName = req.params('city'),
-        year = req.params('year'),
-        gender = req.params('gender');
-    console.log('cityName :',cityName );
-    console.log('year :',year );
-    console.log('gender :',gender );
-    CityMongo.distinct('population',{city: cityName, year: year}, function (err, docs) {
-      var population = _.where(docs, {gender: gender});
-      return res.json(population);
-   });
-};*/
-
-/**
  *   Return database from Mongolab
  */
 exports.getAllDB = function(req, res) {
